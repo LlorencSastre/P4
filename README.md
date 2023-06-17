@@ -48,7 +48,9 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
-  
+
+
+
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
     parametrizadas.
   + ¿Cuál de ellas le parece que contiene más información?
@@ -95,7 +97,7 @@ Complete el código necesario para realizar reconociminto del locutor y optimice
 
  |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
-  | Tasa de error |  -0.818326    |  0.198087    |   7.13%   |
+  | Tasa de error |  -0.818326    |  3.18%    |   7.13%   |
 
 ### Verificación del locutor.
 
