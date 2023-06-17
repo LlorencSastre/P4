@@ -113,14 +113,14 @@ MFCC:
     parametrizadas.
   + ¿Cuál de ellas le parece que contiene más información?
 
+La parametrització que conté més informació es la LPCC, te els coeficients millor distribuits i no son tant susceptibles a depencencies y correlacions entre si. El cas contrari es el de LP que la distribució s'assembla molt a una funció lineal. 
+
 - Usando el programa <code>pearson</code>, obtenga los coeficientes de correlación normalizada entre los
   parámetros 2 y 3 para un locutor, y rellene la tabla siguiente con los valores obtenidos.
 
   |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
   | &rho;<sub>x</sub>[2,3] |  -0.818326    |  0.198087    |   -0.11145   |
-  
-  + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
 
 ```python
 export FEAT=lp; pearson work/$FEAT/BLOCK00/SES000/* | grep "rho\[2\]\[3\]"
@@ -129,6 +129,11 @@ export FEAT=lpcc; pearson work/$FEAT/BLOCK00/SES000/* | grep "rho\[2\]\[3\]"
 
 export FEAT=mfcc; pearson work/$FEAT/BLOCK00/SES000/* | grep "rho\[2\]\[3\]"
 ```
+
+  + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
+
+Em valor absolut el LP es molt major que els altres dos, aixo ens indica que estan molt més correlats, cosa que te sentit si mirem les gràfiques anteriors.
+
 - Según la teoría, ¿qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC?
 
 LPCC: Seguint la teoria, el paràmetre adequat és l'ordre del coeficients de la predicció lineal del LPCC.
