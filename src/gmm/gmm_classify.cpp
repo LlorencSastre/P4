@@ -27,7 +27,6 @@ int classify(const vector<GMM> &vgmm, const fmatrix &dat, float &maxlprob)
 
 	//TODO Assign maxind to the best index of vgmm calling 'logprob' for each gmm. Implement this function in gmm.cpp
 	maxind = 0;
-<<<<<<< HEAD
 
 	for(unsigned int i=0; i<vgmm.size(); ++i){
     	lprob = vgmm[i].logprob(dat);
@@ -38,17 +37,6 @@ int classify(const vector<GMM> &vgmm, const fmatrix &dat, float &maxlprob)
 	}
 
 	return maxind;
-=======
-	int numGMMs = vgmm.size();
-    for (int i = 0; i < numGMMs; i++) {
-        double lprob = vgmm[i].logprob(dat);
-        if (lprob > maxlprob) {
-            maxlprob = lprob;
-            maxind = i;
-        }
-    }
-    return maxind;
->>>>>>> 784a4f156e2c0000529d7004ebe836710c69c459
 }
 
 
