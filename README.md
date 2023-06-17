@@ -222,6 +222,8 @@ Sat Jun 17 18:23:30 CEST 2023
 - Adjunte, en el repositorio de la práctica, los ficheros `class_test.log` y `verif_test.log` 
   correspondientes a la evaluación *ciega* final.
 
+Els fixers `class_test.log` i `verif_test.log` estan dintre de la carpeta <code>work</code>
+
 ### Trabajo de ampliación.
 
 - Recuerde enviar a Atenea un fichero en formato zip o tgz con la memoria (en formato PDF) con el trabajo 
