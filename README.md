@@ -49,7 +49,7 @@ ejercicios indicados.
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
 
-```
+```python
 import matplotlib.pyplot as plt
 
 
@@ -122,7 +122,7 @@ MFCC:
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
 
-```
+```python
 export FEAT=lp; pearson work/$FEAT/BLOCK00/SES000/* | grep "rho\[2\]\[3\]"
 
 export FEAT=lpcc; pearson work/$FEAT/BLOCK00/SES000/* | grep "rho\[2\]\[3\]"
