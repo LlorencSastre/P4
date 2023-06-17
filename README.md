@@ -97,12 +97,15 @@ plt.savefig('mfcc_2_3.png')
 ```
   
 LP:
+
 ![](https://github.com/LlorencSastre/P4/blob/Matamala-Sastre/lp_2_3.png)
 
 LPCC:
+
 ![](https://github.com/LlorencSastre/P4/blob/Matamala-Sastre/lpcc_2_3.png)
 
 MFCC:
+
 ![](https://github.com/LlorencSastre/P4/blob/Matamala-Sastre/mfcc_2_3.png)
 
 
