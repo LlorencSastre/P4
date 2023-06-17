@@ -49,6 +49,61 @@ ejercicios indicados.
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
 
+```
+import matplotlib.pyplot as plt
+
+
+# coeficientes LP
+X, Y = [], []
+for line in open('lp_2_3.txt', 'r'):
+  values = [float(s) for s in line.split()]
+  X.append(values[0])
+  Y.append(values[1])
+plt.figure(1)
+plt.plot(X, Y, 'b*', markersize=4)
+plt.title('LP',fontsize=18)
+plt.xlabel('coeficient 1')
+plt.ylabel('coeficient 2')
+plt.savefig('lp_2_3.png')
+#plt.show()
+
+# coeficientes LPCC
+X, Y = [], []
+for line in open('lpcc_2_3.txt', 'r'):
+  values = [float(s) for s in line.split()]
+  X.append(values[0])
+  Y.append(values[1])
+plt.figure(2)
+plt.plot(X, Y, 'b*', markersize=4)
+plt.title('LPCC',fontsize=18)
+plt.xlabel('coeficient 1')
+plt.ylabel('coeficient 2')
+plt.savefig('lpcc_2_3.png')
+#plt.show()
+
+# coeficientes MFCC
+X, Y = [], []
+for line in open('mfcc_2_3.txt', 'r'):
+  values = [float(s) for s in line.split()]
+  X.append(values[0])
+  Y.append(values[1])
+plt.figure(3)
+plt.plot(X, Y, 'b*', markersize=4)
+plt.title('MFCC',fontsize=18)
+plt.xlabel('coeficient 1')
+plt.ylabel('coeficient 2')
+plt.savefig('mfcc_2_3.png')
+#plt.show()
+```
+  
+LP:
+![](https://github.com/LlorencSastre/P4/blob/Matamala-Sastre/lp_2_3.png)
+
+LPCC:
+![](https://github.com/LlorencSastre/P4/blob/Matamala-Sastre/lpcc_2_3.png)
+
+MFCC:
+![](https://github.com/LlorencSastre/P4/blob/Matamala-Sastre/mfcc_2_3.png)
 
 
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
@@ -97,7 +152,7 @@ Complete el código necesario para realizar reconociminto del locutor y optimice
 
  |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
-  | Tasa de error |  -0.818326    |  3.18%    |   7.13%   |
+  | Tasa de error |  40.76%    |  3.18%    |   7.13%   |
 
 ### Verificación del locutor.
 
