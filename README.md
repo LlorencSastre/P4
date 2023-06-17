@@ -33,9 +33,6 @@ ejercicios indicados.
   principal (`sox`, `$X2X`, `$FRAME`, `$WINDOW` y `$LPC`). Explique el significado de cada una de las 
   opciones empleadas y de sus valores.
 
-- Explique el procedimiento seguido para obtener un fichero de formato *fmatrix* a partir de los ficheros de
-  salida de SPTK (líneas 45 a 51 del script `wav2lp.sh`).
-
 sox: Convertim els arxius d'audio a format raw.
 
 x2x: Canviem el format de les dades de raw a float.
@@ -45,6 +42,12 @@ frame: Dividim l'arxiu en trames de 30ms cada 10ms.
 window: Apliquem un enfinestrat a cada trama.
 
 lpc: Calculem els primers coeficients de predicció lineal.
+
+
+- Explique el procedimiento seguido para obtener un fichero de formato *fmatrix* a partir de los ficheros de
+  salida de SPTK (líneas 45 a 51 del script `wav2lp.sh`).
+
+Busquem el nombre de columnes i files que tendra el nostre fixer. Un cop preparat, ho pasem de ascii a unit32 i cream un fixer amb les columnes i files per a poder observar-ho d'una manera mes comode.
 
   * ¿Por qué es más conveniente el formato *fmatrix* que el SPTK?
 
