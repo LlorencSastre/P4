@@ -118,7 +118,7 @@ MFCC:
 
   |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
-  | &rho;<sub>x</sub>[2,3] |  -0.818326    |  0.198087    |   -0.134221   |
+  | &rho;<sub>x</sub>[2,3] |  -0.818326    |  0.198087    |   -0.11145   |
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
 
