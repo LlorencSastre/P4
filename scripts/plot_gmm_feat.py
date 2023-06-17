@@ -158,7 +158,7 @@ Usage:
 Options:
     --xDim INT, -x INT               'x' dimension to use from GMM and feature vectors [default: 0]
     --yDim INT, -y INT               'y' dimension to use from GMM and feature vectors [default: 1]
-    --percents FLOAT..., -p FLOAT...  Percentages covered by the regions [default: 90,50]
+    --percents FLOAT..., -p FLOAT...  Percentages covered by the regions [default: 90,50,10]
     --colorGMM STR, -g STR            Color of the GMM regions boundaries [default: red]
     --colorFEAT STR, -f STR           Color of the feature population [default: red]
     --limits xyLimits -l xyLimits     xyLimits are the four values xMin,xMax,yMin,yMax [default: auto]
@@ -193,4 +193,3 @@ if __name__ == '__main__':
         limits = None
 
     plotGMM(fileGMM, xDim, yDim, percents, colorGmm, filesFeat, colorFeat, limits, 111)
-
