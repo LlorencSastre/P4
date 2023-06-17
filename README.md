@@ -101,6 +101,48 @@ Complete el código necesario para realizar verificación del locutor y optimice
   de verificación de SPEECON. La tabla debe incluir el umbral óptimo, el número de falsas alarmas y de
   pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea
   de reconocimiento.
+
+LP:
+```
+run_spkid lp train test classerr trainworld verify verifyerr
+
+==============================================
+THR: 0.678547558659198
+Missed:     151/250=0.6040
+FalseAlarm: 23/1000=0.0230
+----------------------------------------------
+==> CostDetection: 81.1
+==============================================
+Sat Jun 17 18:13:54 CEST 2023
+```
+
+LPCC:
+```
+run_spkid lpcc train test classerr trainworld verify verifyerr
+
+==============================================
+THR: 0.909916475240501
+Missed:     52/250=0.2080
+FalseAlarm: 9/1000=0.0090
+----------------------------------------------
+==> CostDetection: 28.9
+==============================================
+Sat Jun 17 18:18:18 CEST 2023
+```
+
+MFCC:
+```
+run_spkid mfcc train test classerr trainworld verify verifyerr
+
+==============================================
+THR: 1.6947896311739
+Missed:     125/250=0.5000
+FalseAlarm: 6/1000=0.0060
+----------------------------------------------
+==> CostDetection: 55.4
+==============================================
+Sat Jun 17 18:23:30 CEST 2023
+```
  
 ### Test final
 
